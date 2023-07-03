@@ -1,0 +1,18 @@
+.menu {
+    grid-area: h;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  
+  
+  .header_logo{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5%;
+
+  }

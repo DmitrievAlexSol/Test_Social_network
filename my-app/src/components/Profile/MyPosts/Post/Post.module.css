@@ -1,0 +1,22 @@
+.item {
+  color: black;
+
+  height: 100px;
+}
+
+.item img {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.item_content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #d2d2d2e8;
+}
+
+.message{
+  background-color:#d2d2d2e8;
+}
+

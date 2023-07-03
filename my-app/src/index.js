@@ -4,19 +4,27 @@ import store from "./Redux/state";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+
+/*let renderEntireTree = (state) => {
+  ReactDOM.render(
+    <BrowserRouter>
+      <App state={state} dispatch={store.dispatch.bind(store)} />
+    </BrowserRouter>,
+    document.getElementById("root")
+  );
+};*/
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 export let renderEntireTree = (state) => {
-  const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(
-    <React.StrictMode>
-      <App
-        state={state}
-        addPost={store.addPost.bind(store)}
-        updateNewPostText={store.updateNewPostText.bind(store)}
-      />
-    </React.StrictMode>
+    <BrowserRouter>
+        <App state={state} dispatch={store.dispatch.bind(store)} />
+    </BrowserRouter>
   );
 };
+
 
 renderEntireTree(store.getState());
 
